@@ -47,7 +47,7 @@ rsfp/  # Root directory
 ├── data/                          # All input data & generated cached data
 │   ├── cache/                     # Folder used for caching precomputed voting recommendations and other files
 │   ├── smart vote data/           # Smartvote data from 2019
-│   ├── sv23_ETHZ/                 # Smartvote data from 2023
+│   ├── sv23_/                 # Smartvote data from 2023
 │   └── NRW2023-kandidierende.json # Election vote data for 2023
 │
 ├── answer_optimization/           # Optimized crafted candidates for all cantons
@@ -58,15 +58,15 @@ rsfp/  # Root directory
 To ensure that everything works correctly in this project, the following files must be present in the specified directories:
 
 1. **2019 Data Files:**
-   - Voter Data: `data/smart vote data/sv_Voter_1xNR_V1_0_ethz.csv`
+   - Voter Data: `data/smart vote data/sv_Voter_1xNR_V1_0_.csv`
    - Candidate Data: `data/smart vote data/smartvote_2019_Candidates_NR.csv`
    - Questions Data: `data/smart vote data/smartvote_2019_NR_Questions.csv`
 
 2. **2023 Data Files:**
-   - Voter Data: `data/sv23_ETHZ/sv23 Voters-NR 2024-03-14.csv`
-   - Corrected Timestamp Data: `data/sv23_ETHZ/sv23 Voters-NR_time_recDATE.csv`
-   - Candidate Data: `data/sv23_ETHZ/23_ch_nr_candidates_de_2024_03_06.csv`
-   - Questions Data: `data/sv23_ETHZ/23_ch_nr-questions_de-fr-it-en.xlsx`
+   - Voter Data: `data/sv23_/sv23 Voters-NR 2024-03-14.csv`
+   - Corrected Timestamp Data: `data/sv23_/sv23 Voters-NR_time_recDATE.csv`
+   - Candidate Data: `data/sv23_/23_ch_nr_candidates_de_2024_03_06.csv`
+   - Questions Data: `data/sv23_/23_ch_nr-questions_de-fr-it-en.xlsx`
 
 3. **2023 Election Data:**
    - Election Vote Data: `data/NRW2023-kandidierende.json` (from https://opendata.swiss/de/dataset/eidg-wahlen-2023/resource/1cd03e48-bb87-4d89-825b-84ccd32a0b83, slightly changed over time, best to use version in repository)
@@ -105,7 +105,7 @@ python answer_optimization_script.py
 
 ### 1. Building the Data
 
-To build the data you require the Smartvote datasets. The datasets should be placed in the `data/smart vote data` and `data/sv23_ETHZ` folders and the files should be named as indicated in [Required Files](#required-files). Alternatively you can also adjust the file paths in the `constants.py` module.
+To build the data you require the Smartvote datasets. The datasets should be placed in the `data/smart vote data` and `data/sv23_` folders and the files should be named as indicated in [Required Files](#required-files). Alternatively you can also adjust the file paths in the `constants.py` module.
 
 You can use the `build_all`, `build_voters` and `build_candidates` (2023) functions, or the `build_all19`, `build_voters19` and `build_candidates19` (2019) functions from the `data.py` module, to build the voter and candidate dataframes of the respective years.
 
