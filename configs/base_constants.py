@@ -38,7 +38,7 @@ FAKE_DIR = DATA_DIR / "fake"
 CLONED_DIR = DATA_DIR / "cloned"
 PARAPHRASES_DIR = DATA_DIR / "paraphrases"
 REMOVED_DIR = DATA_DIR / "removed"
-DATA_2023_DIR = RAW_DIR / "sv23_ETHZ"
+DATA_2023_DIR = RAW_DIR / "sv23_"
 DATA_2019_DIR = RAW_DIR / "smart vote data"
 
 # experiment results path
@@ -70,7 +70,7 @@ TIMESTAMP_FILE = DATA_2023_DIR / "sv23 Voters-NR_time_recDATE.csv"
 RAW_CAND_2023_PATH = DATA_2023_DIR / "23_ch_nr_candidates_de_2024_03_06.csv"
 RAW_VOTERS_2023_PATH = CLEANED_DIR / "df_voters_topmatch.parquet"
 RAW_CAND_2019_PATH = DATA_2019_DIR / "smartvote_2019_candidates_NR.csv"
-RAW_VOTERS_2019_PATH = DATA_2019_DIR / "sv_Voter_1xNR_V1_0_ethz.csv"
+RAW_VOTERS_2019_PATH = DATA_2019_DIR / "sv_Voter_1xNR_V1_0_.csv"
 
 # cleaned data paths
 VOTERS_19_PREFIX = "df_voters19-"
