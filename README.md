@@ -233,4 +233,4 @@ The project root is derived from the checkout location, so jobs run from whereve
 
 ## Data Confidentiality
 
-**IMPORTANT:** Any data containing voter IDs, candidate IDs, or data linked to individual voters/candidates is strictly confidential. Only question data (texts, IDs) is tracked in version control. Do not push raw SmartVote voter parquets to this repository.
+**IMPORTANT:** Any data containing voter IDs, candidate IDs, or data linked to individual voters/candidates is strictly confidential. Only question data (texts, IDs) is tracked in version control.
